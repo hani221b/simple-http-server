@@ -1,8 +1,8 @@
-#include <tcp-server.h>
+#include "tcp-server.h"
 
 int main()
 {
     using namespace http;
-    TCPServer server = TCPServer();
+    TCPServer server = TCPServer("0.0.0.0", 8090);
     return 0;
 }
